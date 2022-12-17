@@ -13,7 +13,7 @@ function About() {
           TENTANG KAMI
         </h1>
         <p
-          className="text-neutral-content text-justify md:text-center text-md md:text-lg my-4 px-4 max-w-6xl"
+          className="text-neutral-content text-justify md:text-center text-md my-4 px-4 max-w-6xl"
           data-aos="fade-up"
           data-aos-delay="300"
         >

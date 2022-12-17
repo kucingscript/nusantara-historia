@@ -14,6 +14,11 @@ module.exports = {
     container: {
       center: true,
     },
+    extend: {
+      backgroundImage: {
+        hero: "url('./src/assets/hero.webp')",
+      },
+    },
   },
   plugins: [require("daisyui")],
 };

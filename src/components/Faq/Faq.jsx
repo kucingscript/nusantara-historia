@@ -11,7 +11,7 @@ function Request() {
         >
           F A Q
         </h1>
-        <div className="flex justify-between leading-6 text-[16px] w-full md:w-1/2 md:leading-7">
+        <div className="flex justify-between leading-6 text-[16px] w-full md:w-2/3 md:leading-7">
           <div className="flex flex-col">
             {dataFaq[0].map((faq, index) => {
               return (
