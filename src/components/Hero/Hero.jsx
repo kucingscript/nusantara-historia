@@ -25,18 +25,18 @@ function Hero() {
       <section name="beranda" className="w-full h-screen relative">
         <div className="h-full flex justify-center items-center">
           <div className="hero min-h-screen bg-hero bg-center bg-fixed">
-            <div className="hero-overlay"></div>
+            <div className="hero-overlay bg-opacity-80"></div>
             <div className="hero-content text-center text-neutral-content">
               <div>
                 <h1
-                  className="mb-3 text-3xl md:text-6xl font-bold"
+                  className="mb-3 text-3xl md:text-5xl font-bold"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
                   <span className="text-primary">Nusantara</span> Historia
                 </h1>
                 <p
-                  className="mb-4 text-md md:text-xl"
+                  className="mb-4 text-md md:text-[19px]"
                   data-aos="fade-up"
                   data-aos-delay="300"
                 >
