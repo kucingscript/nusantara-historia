@@ -25,7 +25,7 @@ function Hero() {
       <section name="beranda" className="w-full h-screen relative">
         <div className="h-full flex justify-center items-center">
           <div className="hero min-h-screen bg-hero bg-center bg-fixed">
-            <div className="hero-overlay bg-opacity-80"></div>
+            <div className="hero-overlay bg-opacity-70"></div>
             <div className="hero-content text-center text-neutral-content">
               <div>
                 <h1
