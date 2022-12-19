@@ -8,6 +8,9 @@ import kaisiepoimg from "../../assets/history/frans.webp";
 import hoegengimg from "../../assets/history/hoegeng.webp";
 
 import munirimg from "../../assets/peristiwa/munirImg.webp";
+import kedatanganislamimg from "../../assets/peristiwa/kedatanganIslam.webp";
+import aiditimg from "../../assets/peristiwa/aidit.webp";
+import bombaliimg from "../../assets/peristiwa/bomBali.webp";
 
 import {
   Soekarno,
@@ -19,6 +22,9 @@ import {
   Kaisiepo,
   Hoegeng,
   Munir,
+  KedatanganIslam,
+  Aidit,
+  BomBali,
 } from "../index";
 
 export const data = [
@@ -110,6 +116,33 @@ export const data = [
       component: Munir,
       aos: "fade-up",
       delay: 200,
+    },
+    {
+      img: kedatanganislamimg,
+      name: "Masuknya Islam",
+      text: "Masuknya Islam di Indonesia",
+      path: "/kedatangan-islam",
+      component: KedatanganIslam,
+      aos: "fade-up",
+      delay: 200,
+    },
+    {
+      img: aiditimg,
+      name: "Tebunuhnya D.N. Aidit",
+      text: "Misteri Dibalik Eksekusi Aidit",
+      path: "/aidit",
+      component: Aidit,
+      aos: "fade-up",
+      delay: 300,
+    },
+    {
+      img: bombaliimg,
+      name: "Bom Bali",
+      text: "Cara Polisi Mengungkap Pelaku Peledakan",
+      path: "/bom-bali",
+      component: BomBali,
+      aos: "fade-up",
+      delay: 400,
     },
   ],
 ];

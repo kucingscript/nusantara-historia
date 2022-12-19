@@ -10,7 +10,7 @@ function Munir() {
         <h1 className="text-3xl md:text-5xl text-primary font-bold tracking-wider pb-4">
           Pembunuhan Munir
         </h1>
-        <p className="text-white text-justify text-[14px] md:text-[17px]">
+        <p className="text-white text-justify text-[14px] md:text-[16px]">
           Pada waktu itu beliau membela para aktivis menjadi korban penculikan
           Tim mawar dari Kopassus. <br />
           <br />

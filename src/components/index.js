@@ -8,3 +8,6 @@ export { default as Kaisiepo } from "./pages/Kaisiepo";
 export { default as Hoegeng } from "./pages/Hoegeng";
 
 export { default as Munir } from "./pages/Peristiwa/Munir";
+export { default as KedatanganIslam } from "./pages/Peristiwa/kedatanganIslam";
+export { default as Aidit } from "./pages/Peristiwa/Aidit";
+export { default as BomBali } from "./pages/Peristiwa/BomBali";
