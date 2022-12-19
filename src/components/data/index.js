@@ -150,28 +150,33 @@ export const data = [
 export const dataFaq = [
   [
     {
+      main: "Apa itu Sejarah ?",
+      sub: "Sejarah adalah cerita yang akan terus kita baca, terus kita ceritakan, dan terus kita hidupi",
+      delay: 200,
+    },
+    {
       main: "Visi",
       sub: "Menyediakan wadah untuk memantik ketertarikan terhadap dunia sejarah",
       aos: "fade-up",
-      delay: 200,
+      delay: 300,
     },
     {
       main: "Misi",
       sub: "Menyajikan sejarah dengan cara yang lebih menyenangkan",
       aos: "fade-up",
-      delay: 300,
+      delay: 400,
     },
     {
       main: "Latar Belakang",
       sub: "Kami yakin dan percaya bahwa dengan mempelajari sejarah, masa depan dunia akan menjadi lebih baik. Ketika kita mengambil pengalaman dimasa lalu, kita akan siap untuk menghadapi masa depan yang penuh dengan ketidakpastian",
       aos: "fade-up",
-      delay: 400,
+      delay: 500,
     },
     {
       main: "Deskripsi",
       sub: "Sebuah web based learning yang berisi artikel tentang sejarah nusantara. Website yang bisa diakses oleh siapa saja, kapan saja, dan dimana saja",
       aos: "fade-up",
-      delay: 500,
+      delay: 600,
     },
   ],
 ];
