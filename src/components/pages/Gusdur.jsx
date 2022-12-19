@@ -12,7 +12,7 @@ function Gusdur() {
   Swal.fire("Abdurrahman Wahid", "Presiden Keempat Indonesia", "info");
 
   return (
-    <div className="w-full min-h-screen text-white">
+    <div className="w-full min-h-screen text-white overflow-x-hidden">
       <VerticalTimeline lineColor="#641AE6">
         {data[4].map((item, index) => {
           return (

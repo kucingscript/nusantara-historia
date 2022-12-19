@@ -1,4 +1,23 @@
+import { useState } from "react";
+
 function Contact() {
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState(null);
+
+  const isValidEmail = (email) => {
+    return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(email);
+  };
+
+  const handleChange = (event) => {
+    if (!isValidEmail(event.target.value)) {
+      setError("Email is invalid");
+    } else {
+      setError(null);
+    }
+
+    setMessage(event.target.value);
+  };
+
   return (
     <section name="kontak" className="h-screen w-full mt-20">
       <div className="container w-full h-full flex items-center flex-col">
@@ -21,14 +40,22 @@ function Contact() {
             name="email"
             placeholder="Masukkan email anda"
             required
+            value={message}
+            onChange={handleChange}
             data-aos="fade-up"
             data-aos-delay="200"
           />
+
+          {error && (
+            <p className="text-primary text-sm px-4 md:text-md">{error}</p>
+          )}
+
           <input
             type="text"
             className="p-4 rounded-md outline-none bg-neutral"
             name="name"
             placeholder="Masukkan nama anda"
+            minLength={3}
             required
             data-aos="fade-up"
             data-aos-delay="300"
