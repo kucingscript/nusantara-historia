@@ -12,7 +12,7 @@ function Soekarno() {
   Swal.fire("Ir. Soekarno", "Presiden Pertama Indonesia", "info");
 
   return (
-    <div className="w-full min-h-screen text-white">
+    <div className="w-full min-h-screen text-white overflow-x-hidden">
       <VerticalTimeline lineColor="#4361ee">
         {data[0].map((item, index) => {
           return (

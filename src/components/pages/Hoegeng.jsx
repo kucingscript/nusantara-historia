@@ -12,7 +12,7 @@ function Hoegeng() {
   Swal.fire("Jenderal Hoegeng", "Polisi Teladan Sepanjang Masa", "info");
 
   return (
-    <div className="w-full min-h-screen text-white">
+    <div className="w-full min-h-screen text-white overflow-x-hidden">
       <VerticalTimeline lineColor="#641AE6">
         {data[7].map((item, index) => {
           return (

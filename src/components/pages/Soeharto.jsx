@@ -12,7 +12,7 @@ function Soeharto() {
   Swal.fire("Soeharto", "Presiden Kedua Indonesia", "info");
 
   return (
-    <div className="w-full min-h-screen text-white">
+    <div className="w-full min-h-screen text-white overflow-x-hidden">
       <VerticalTimeline lineColor="#0096C7">
         {data[2].map((item, index) => {
           return (

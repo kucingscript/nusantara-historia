@@ -12,7 +12,7 @@ function Kaisiepo() {
   Swal.fire("Frans Kaisiepo", "Pahlawan dari Ujung Timur Indonesia ", "info");
 
   return (
-    <div className="w-full min-h-screen text-white">
+    <div className="w-full min-h-screen text-white overflow-x-hidden">
       <VerticalTimeline lineColor="#9048F4">
         {data[6].map((item, index) => {
           return (

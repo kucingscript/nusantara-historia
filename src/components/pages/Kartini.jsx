@@ -12,7 +12,7 @@ function Kartini() {
   Swal.fire("R.A Kartini", "Penoreh Jejak Emansipasi Wanita", "info");
 
   return (
-    <div className="w-full min-h-screen text-white">
+    <div className="w-full min-h-screen text-white overflow-x-hidden">
       <VerticalTimeline lineColor="#4361ee">
         {data[5].map((item, index) => {
           return (

@@ -12,7 +12,7 @@ function Hatta() {
   Swal.fire("Mohammad Hatta", "Wakil Presiden Pertama Indonesia", "info");
 
   return (
-    <div className="w-full min-h-screen text-white">
+    <div className="w-full min-h-screen text-white overflow-x-hidden">
       <VerticalTimeline lineColor="#7209b7">
         {data[1].map((item, index) => {
           return (

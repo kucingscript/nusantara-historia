@@ -12,7 +12,7 @@ function Habibie() {
   Swal.fire("Bacharuddin Jusuf Habibie", "Presiden Ketiga Indonesia", "info");
 
   return (
-    <div className="w-full min-h-screen text-white">
+    <div className="w-full min-h-screen text-white overflow-x-hidden">
       <VerticalTimeline lineColor="#9048F4">
         {data[3].map((item, index) => {
           return (
