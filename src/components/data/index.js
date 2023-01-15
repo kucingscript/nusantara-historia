@@ -168,7 +168,7 @@ export const dataFaq = [
     },
     {
       main: "Latar Belakang",
-      sub: "Kami yakin dan percaya bahwa dengan mempelajari sejarah, masa depan dunia akan menjadi lebih baik. Ketika kita mengambil pengalaman dimasa lalu, kita akan siap untuk menghadapi masa depan yang penuh dengan ketidakpastian",
+      sub: "Kami yakin dan percaya bahwa dengan mempelajari sejarah, masa depan dunia akan menjadi lebih baik. Ketika kita mengambil pengalaman di masa lalu, kita akan siap untuk menghadapi masa depan yang penuh dengan ketidakpastian",
       aos: "fade-up",
       delay: 500,
     },

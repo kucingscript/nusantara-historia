@@ -2,7 +2,6 @@ import { useState } from "react";
 
 import Tokoh from "./Tokoh";
 import Peristiwa from "./Peristiwa";
-import Mitologi from "./Mitologi";
 
 function History() {
   const [activeTab, setActiveTab] = useState("tab2");
@@ -51,18 +50,6 @@ function History() {
             >
               TOKOH
             </a>
-            <a
-              className={
-                activeTab === "tab3"
-                  ? "tab tab-active tab-sm md:tab-md"
-                  : "tab tab-sm md:tab-md"
-              }
-              onClick={() => setActiveTab("tab3")}
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              MITOLOGI
-            </a>
           </div>
         </div>
 
@@ -73,7 +60,7 @@ function History() {
             ) : activeTab === "tab2" ? (
               <Tokoh />
             ) : (
-              <Mitologi />
+              ""
             )}
           </div>
         </div>
