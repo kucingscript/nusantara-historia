@@ -21,11 +21,7 @@ function Contact() {
   return (
     <section name="kontak" className="h-screen w-full mt-20">
       <div className="container w-full h-full flex items-center flex-col">
-        <h1
-          className="text-center text-4xl text-primary font-bold tracking-wider my-16 md:text-5xl"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
+        <h1 className="text-center text-4xl text-primary font-bold tracking-wider my-16 md:text-5xl">
           Hubungi Kami
         </h1>
 
@@ -42,8 +38,6 @@ function Contact() {
             required
             value={message}
             onChange={handleChange}
-            data-aos="fade-up"
-            data-aos-delay="200"
           />
 
           {error && (
@@ -57,8 +51,6 @@ function Contact() {
             placeholder="Masukkan nama anda"
             minLength={3}
             required
-            data-aos="fade-up"
-            data-aos-delay="300"
           />
           <textarea
             rows="10"
@@ -66,15 +58,8 @@ function Contact() {
             name="message"
             placeholder="Masukkan pesan anda"
             required
-            data-aos="fade-up"
-            data-aos-delay="400"
           ></textarea>
-          <button
-            type="submit"
-            className="btn btn-primary w-1/2 mx-auto"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
+          <button type="submit" className="btn btn-primary w-1/2 mx-auto">
             Submit
           </button>
         </form>
