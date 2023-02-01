@@ -1,6 +1,6 @@
 import { dataFaq } from "../data";
 
-function Request() {
+function Faq() {
   return (
     <section name="faq" className="h-screen w-full -mt-40">
       <div className="container w-full h-full flex justify-center items-center flex-col">
@@ -37,4 +37,4 @@ function Request() {
   );
 }
 
-export default Request;
+export default Faq;
