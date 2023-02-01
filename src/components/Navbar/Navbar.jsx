@@ -6,17 +6,13 @@ import { themeChange } from "theme-change";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { MdOutlineCloseFullscreen } from "react-icons/md";
 
+import { navLists } from "../data/";
+import NavbarCenter from "./NavbarCenter";
+import NavbarEnd from "./NavbarEnd";
+
 function Navbar() {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-
-  const lists = [
-    { name: "beranda", link: "beranda", offset: 0 },
-    { name: "sejarah", link: "sejarah", offset: 0 },
-    { name: "tentang", link: "tentang", offset: 100 },
-    { name: "faq", link: "faq", offset: 0 },
-    { name: "kontak", link: "kontak", offset: 0 },
-  ];
 
   useEffect(() => {
     themeChange(false);
@@ -47,20 +43,20 @@ function Navbar() {
                 : "menu menu-compact dropdown-content space-y-8 mt-4 px-2 backdrop-blur-sm"
             }
           >
-            {lists.map((list, index) => {
+            {navLists.map((item, index) => {
               return (
                 <Link
-                  to={list.link}
+                  to={item.link}
                   duration={500}
                   smooth={true}
-                  offset={list.offset}
+                  offset={item.offset}
                   key={index}
                 >
                   <li
                     className="capitalize cursor-pointer hover:text-primary"
                     onClick={handleClick}
                   >
-                    {list.name}
+                    {item.name}
                   </li>
                 </Link>
               );
@@ -70,30 +66,11 @@ function Navbar() {
       </div>
 
       <div className="navbar-center">
-        <button
-          className="btn btn-ghost text-primary text-xl"
-          data-aos="fade-down"
-          data-aos-delay="200"
-        >
-          Nusantara
-        </button>
+        <NavbarCenter />
       </div>
 
       <div className="navbar-end">
-        <button
-          data-set-theme="coffee"
-          data-act-class="ACTIVECLASS"
-          className="btn btn-xs btn-circle bg-[#DC944C] hover:bg-[#DC944C]"
-          data-aos="fade-down"
-          data-aos-delay="200"
-        ></button>
-        <button
-          data-set-theme="forest"
-          data-act-class="ACTIVECLASS"
-          className="btn btn-xs btn-circle bg-[#1EB854] hover:bg-[#1EB854] mx-2 md:mx-4"
-          data-aos="fade-down"
-          data-aos-delay="300"
-        ></button>
+        <NavbarEnd />
       </div>
     </nav>
   );

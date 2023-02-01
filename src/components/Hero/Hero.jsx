@@ -1,18 +1,11 @@
-import { useEffect, lazy, Suspense } from "react";
+import { useEffect } from "react";
 
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Navbar from "../Navbar/Navbar";
-import Top from "../Scroll/Top";
-
-const History = lazy(() => import("../History/History"));
-const About = lazy(() => import("../About/About"));
-const Faq = lazy(() => import("../Faq/Faq"));
-const Contact = lazy(() => import("../Contact/Contact"));
-const Footer = lazy(() => import("../Footer/Footer"));
+import { Navbar, History, About, Faq, Contact, Footer, Top } from "../";
 
 function Hero() {
   useEffect(() => {
@@ -61,13 +54,12 @@ function Hero() {
           </div>
         </div>
       </section>
-      <Suspense fallback={<div>Loading...</div>}>
-        <History />
-        <About />
-        <Faq />
-        <Contact />
-        <Footer />
-      </Suspense>
+
+      <History />
+      <About />
+      <Faq />
+      <Contact />
+      <Footer />
       <Top />
     </>
   );

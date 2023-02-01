@@ -27,6 +27,14 @@ import {
   BomBali,
 } from "../index";
 
+export const navLists = [
+  { name: "beranda", link: "beranda", offset: 0 },
+  { name: "sejarah", link: "sejarah", offset: 0 },
+  { name: "tentang", link: "tentang", offset: 100 },
+  { name: "faq", link: "faq", offset: 0 },
+  { name: "kontak", link: "kontak", offset: 0 },
+];
+
 export const data = [
   [
     {
