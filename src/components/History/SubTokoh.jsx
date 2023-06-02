@@ -9,7 +9,7 @@ function SubTokoh({ index }) {
       {data[index].map((img, index) => {
         return (
           <div
-            className="card shadow-2xl m-5 pt-5 rounded-xl"
+            className="card shadow-2xl m-5 pt-5 rounded-xl w-full"
             key={index}
             data-aos={img.aos}
             data-aos-delay={img.delay}
@@ -30,7 +30,7 @@ function SubTokoh({ index }) {
               </p>
               <button
                 onClick={() => navigate(img.path)}
-                className="btn btn-primary rounded-full btn-sm w-1/2 mx-auto mt-3"
+                className="btn btn-primary rounded-full btn-sm w-1/3 mx-auto mt-3"
               >
                 Baca
               </button>
