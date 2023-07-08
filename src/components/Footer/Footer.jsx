@@ -16,8 +16,7 @@ function Footer() {
         <div>
           <p className="text-center md:text-right">
             Build with
-            <span className="text-primary"> &#10084;</span> by Kelompok 1 -
-            Technopreneur
+            <span className="text-primary"> &#10084;</span> by Kucingscript
           </p>
         </div>
       </div>
